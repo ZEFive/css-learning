@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  text-align: justify;
+  font-weight: 600;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+}

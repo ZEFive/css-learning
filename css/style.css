@@ -3,3 +3,13 @@ h1 {
   color: darkblue;
   font-size: medium;
 }
+
+button {
+  color: darkcyan;
+  background-color: lightblue;
+}
+
+p {
+  color: #008b8b;
+  background-color: lightblue;
+}
