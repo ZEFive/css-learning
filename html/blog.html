@@ -4,16 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+
     <style>
       .jokes > p {
         font-size: 14px;
         color: red;
       }
+
+      .jokes > p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      section button:hover {
+        background-color: red;
+      }
+
+      a + button {
+        background-color: red;
+        color: blue;
+      }
+
+      /* nth-of-type(2) berarti section kedua dari atas
+         nth-of-last-type(2) berarti section kedua dari bawah
+         nth-of-type(2n) berarti setiap kelipatan 2, jadi section ke-2, ke-4, ke-6, dst
+       */
+      section:nth-of-type(2n) {
+        background-color: grey;
+        color: white;
+      }
+
+      section h3::first-letter {
+        font-size: 30px;
+        color: red;
+      }
+
+      section p::first-line {
+        font-size: 20px;
+        color: darkgreen;
+      }
     </style>
   </head>
+
   <body>
     <h1>Kumpulan Jokes Bapack-Bapack</h1>
     <hr />
+
     <section class="jokes">
       <h3>
         Udang kalau dari Cirebon namanya udang Rebon, kalau dari Inggris? Udang
@@ -21,28 +57,46 @@
       </h3>
       <p>Dipublish oleh: <span>John Does</span></p>
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis
+          dolor ratione, unde ipsam debitis, omnis illum minima aut ad
+          consectetur quam facilis at ex quas recusandae quia. Sapiente, fugiat.
+          Saepe repudiandae provident cupiditate impedit totam quasi
+          consequatur, cum odit magnam dignissimos minus omnis libero porro
+          fugiat quisquam veniam maiores alias assumenda eius
+        </p>
       </div>
       <button>Vote +-</button>
     </section>
     <hr />
+
     <section class="jokes">
       <h3>Alat masak apa yang suka kesel? Paan cii....!</h3>
       <p>Dipublish oleh: <span>Jane Doe</span></p>
       <button>Vote +-</button>
     </section>
     <hr />
+
     <section class="jokes">
       <h3>Gula, gula apa yang bukan gula merah? Gula aren't</h3>
       <p>Dipublish oleh: <span>John Does</span></p>
       <button>Vote +-</button>
     </section>
     <hr />
+
+    <section class="jokes">
+      <h3>Apa ajadeh jokes nya</h3>
+      <p>Dipublish oleh: <span>John Does</span></p>
+      <button>Vote +-</button>
+    </section>
+    <hr />
+
     <p>
       Joke ini hanya untuk hiburan Bapack pribadi saja, bukan untuk kalian yang
       mendengarkan
     </p>
     <a href="#">Link</a>
+    <p>Udang Keju</p>
     <button>Vote +-</button>
   </body>
 </html>
